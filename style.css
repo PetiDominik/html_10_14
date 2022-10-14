@@ -48,10 +48,11 @@ body{
 }
 #container #resz .tartalom ul{
     margin-bottom: 0;
+    margin-right: 15px;
 }
 #container #resz .tartalom li{
     list-style-image: url("imgs/arrow.png");
-    margin: 10px auto 0 auto;
+    margin-top: 10px;
 }
 
 @media only screen and (max-width: 670px) {

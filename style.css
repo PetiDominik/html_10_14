@@ -1,0 +1,76 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #303030;
+    color: white;
+    font-family: sans-serif;
+}
+
+#menu{
+    margin-left: 0;
+    padding-left: 20px;
+}
+#menu li{
+    list-style-type: none;
+    display: inline-block;
+}
+#menu li a:link, #menu li a:visited, #menu li a:active{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    margin: 10px;
+}
+#menu li a:hover{
+    color: #ff0513;
+}
+
+#container{
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+#container h1, #container h2{
+    text-align: center;
+}
+#container #resz{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1px;
+    background-color: #ff0513;
+}
+#container #resz .tartalom{
+    background-color: #303030;
+}
+#container #resz .tartalom img{
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+#container #resz .tartalom ul{
+    margin-bottom: 0;
+}
+#container #resz .tartalom li{
+    list-style-image: url("imgs/arrow.png");
+    margin: 10px auto 0 auto;
+}
+
+@media only screen and (max-width: 670px) {
+    #menu{
+        margin: 10px;
+    }
+    #menu li{
+        list-style-type: none;
+        display: inline-block;
+        width: 100%;
+        font-size: 6vw;
+    }
+
+    #container #resz{
+        width: 100%;
+        grid-template-columns: auto;
+        gap: 0px;
+    }
+    #container{
+        width: 100%;
+    }
+}

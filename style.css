@@ -4,6 +4,7 @@ body{
     background-color: #303030;
     color: white;
     font-family: sans-serif;
+    height: 10000px;
 }
 
 #menu{
@@ -23,6 +24,8 @@ body{
 #menu li a:hover{
     color: #ff0513;
 }
+
+/*------------------------------------1.resz--------------------------------*/
 
 #container{
     width: 50%;
@@ -55,6 +58,45 @@ body{
     margin-top: 10px;
 }
 
+/*-----------------------------------2.resz----------------------------------*/
+#container2{
+    width: 80%;
+    margin: 75px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+}
+
+#container2 h1{
+    text-align: left;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#container2 #contLeft, #container2 #contRight{
+    width: 100%;
+}
+
+#container2 #contLeft{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1px;
+    background-color: #ff0513;
+}
+
+#container2 #contLeft .tartalom2{
+    background-color: #303030;
+}
+
+
+#container2 #contRight img{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+/*------------------------------------Respo-----------------------------------*/
+
 @media only screen and (max-width: 700px) {
     #menu{
         margin: 10px;
@@ -66,12 +108,34 @@ body{
         font-size: 6vw;
     }
 
+    /*-----------------------1.resz----------------------*/
     #container #resz{
         width: 100%;
         grid-template-columns: auto;
         gap: 0px;
     }
     #container{
+        width: 100%;
+    }
+
+    /*------------------------2.resz----------------------*/
+
+    #container2{
+        width: auto;
+        margin: 50px 10px 0 10px;
+        grid-template-columns: 1fr;
+        gap: 10%;
+    }
+
+    #container2 h1{
+        font-size: 6vw;
+    }
+
+    #container2 #contLeft{
+        grid-template-columns: auto;
+    }
+
+    #container2 #contRight img{
         width: 100%;
     }
 }

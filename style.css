@@ -4,7 +4,6 @@ body{
     background-color: #303030;
     color: white;
     font-family: sans-serif;
-    height: 10000px;
 }
 
 #menu{
@@ -95,6 +94,50 @@ body{
     margin: auto;
 }
 
+/*-----------------------------------3.resz----------------------------------*/
+#container3{
+    width: 80%;
+    margin: 75px auto 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10%;
+}
+#container3 #szoveg{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+#container3 #szoveg h1{
+    text-decoration: underline #ff0513;
+}
+
+#container3 #managers{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+#container3 #managers .manager{
+    text-align: center;
+}
+#container3 #managers .manager h2{
+    font-size: 15px;
+}
+#container3 #managers .manager img{
+    border-radius: 50%;
+    width: 100px;
+}
+#container3 #managers .manager a:link, #container3 #managers .manager a:visited, #container3 #managers .manager a:active{
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(45deg, rgb(123, 123, 255), rgb(52, 52, 255));
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    transition: 0.5s;
+    display: block;
+}
+#container3 #managers .manager a:hover{
+    color: #aaa;
+}
 /*------------------------------------Respo-----------------------------------*/
 
 @media only screen and (max-width: 700px) {
@@ -138,4 +181,29 @@ body{
     #container2 #contRight img{
         width: 100%;
     }
+
+    /**/
+    #container3{
+        width: auto;
+        margin: 100px 10px 0 10px;
+        gap: 10%;
+    }
+    #container3 #szoveg{
+        width: 100%;
+        margin: 10px;
+        font-size: 2.5vw;;
+    }
+    #container3 #szoveg h1{
+        font-size: 6vw;
+    }
+    
+    #container3 #managers{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #container3 #managers .manager h2{
+        font-size: 3vw;;
+    }
+
+
 }
